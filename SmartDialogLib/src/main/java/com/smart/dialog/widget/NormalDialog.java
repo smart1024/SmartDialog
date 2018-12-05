@@ -137,9 +137,9 @@ public class NormalDialog extends BaseAlertDialog<NormalDialog> {
         /**set background color and corner radius */
         float radius = dp2px(mCornerRadius);
         mLlContainer.setBackgroundDrawable(CornerUtils.cornerDrawable(mBgColor, radius));
-        mTvBtnLeft.setBackgroundDrawable(CornerUtils.btnSelector(radius, mBgColor, mBtnPressColor, 0));
-        mTvBtnRight.setBackgroundDrawable(CornerUtils.btnSelector(radius, mBgColor, mBtnPressColor, 1));
-        mTvBtnMiddle.setBackgroundDrawable(CornerUtils.btnSelector(mBtnNum == 1 ? radius : 0, mBgColor, mBtnPressColor, -1));
+        mTvBtnLeft.setBackgroundDrawable(CornerUtils.btnSelector(radius, mLeftBtnBgColor, mBtnPressColor, 0));
+        mTvBtnRight.setBackgroundDrawable(CornerUtils.btnSelector(radius, mRightBtnBgColor, mBtnPressColor, 1));
+        mTvBtnMiddle.setBackgroundDrawable(CornerUtils.btnSelector(mBtnNum == 1 ? radius : 0, mMiddleBtnBgColor, mBtnPressColor, -1));
     }
 
     // --->属性设置

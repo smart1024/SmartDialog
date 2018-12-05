@@ -75,6 +75,24 @@ public abstract class BaseAlertDialog<T extends BaseAlertDialog<T>> extends Base
     protected int mBgColor = Color.parseColor("#ffffff");
 
     /**
+     * button of left background color
+     * 最左边按钮颜色
+     */
+    protected int mLeftBtnBgColor = Color.parseColor("#ffffff");
+
+    /**
+     * button of middle background color
+     * 中间按钮颜色
+     */
+    protected int mMiddleBtnBgColor = Color.parseColor("#ffffff");
+
+    /**
+     * button of right background color
+     * 最右边按钮颜色
+     */
+    protected int mRightBtnBgColor = Color.parseColor("#ffffff");
+
+    /**
      * method execute order:
      * show:constrouctor---show---oncreate---onStart---onAttachToWindow
      * dismiss:dismiss---onDetachedFromWindow---onStop
@@ -328,9 +346,27 @@ public abstract class BaseAlertDialog<T extends BaseAlertDialog<T>> extends Base
         return (T) this;
     }
 
-    /** set backgroud color(设置背景色) */
+    /** set background color(设置背景色) */
     public T bgColor(int bgColor) {
         mBgColor = bgColor;
+        return (T) this;
+    }
+
+    /** set left button background color(设置背景色) */
+    public T setLeftBtnBgColor(int bgColor) {
+        mLeftBtnBgColor = bgColor;
+        return (T) this;
+    }
+
+    /** set right button background color(设置背景色) */
+    public T setMiddleBtnBgColor(int bgColor) {
+        mMiddleBtnBgColor = bgColor;
+        return (T) this;
+    }
+
+    /** set right button background color(设置背景色) */
+    public T setRightBtnBgColor(int bgColor) {
+        mRightBtnBgColor = bgColor;
         return (T) this;
     }
 

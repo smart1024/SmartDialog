@@ -533,6 +533,8 @@ public class DialogHomeActivity extends AppCompatActivity implements ExpandableL
     public void onBackPressed() {
         final NormalDialog dialog = new NormalDialog(mContext);
         dialog.content("亲,真的要走吗?再看会儿吧~(●—●)")//
+                .setLeftBtnBgColor(Color.parseColor("#000000"))
+                .setRightBtnBgColor(Color.parseColor("#ff6666"))
                 .style(NormalDialog.STYLE_TWO)//
                 .titleTextSize(23)//
                 .btnText("继续逛逛", "残忍退出")//

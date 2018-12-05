@@ -27,8 +27,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 }
 
-def siteUrl = ''  // 项目的主页
-def gitUrl = ''   // Git仓库的url
+def siteUrl = 'https://github.com/smart1024/SmartDialog'  // 项目的主页
+def gitUrl = 'https://github.com/smart1024/SmartDialog'   // Git仓库的url
 version = "1.0"
 group = "com.smart.dialog"       // Maven Group ID for the artifact，一般填你唯一的包名
 install {
