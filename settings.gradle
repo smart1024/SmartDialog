@@ -1,2 +1,2 @@
 include ':app'
-include ':FlycoDialog_Lib'
+include ':SmartDialogLib'
